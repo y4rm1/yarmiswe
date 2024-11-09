@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300:400;500;600;700;800;900&display=swap');
+
+
+*{ /*general*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{ /*full website body*/
+    background-color:rgb(6, 22, 57);
+    color: white;
+}
+
+.header{ /*space behind navbar*/
+    position: fixed; /*makes it not move when you scroll*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{ /*the website logo: Yarmi. */
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{ /*elements of the navigation bar*/
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+}
+
+.navbar a:hover, /*for when you hover over this element*/
+.navbar a.active{
+    color:rgb(127, 255, 251);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%; /*this deals with the margins on the page*/
+}
+
+.home-content{
+    max-width: 600px;
+}
