@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300:400;500;600;700;800;900&display=swap');
 
-
 *{ /*general*/
     margin:0;
     padding:0;
@@ -9,11 +8,13 @@
 }
 
 body{ /*full website body*/
-    background-color:rgb(6, 22, 57);
-    color: white;
+    background-color:rgb(255, 255, 255);
 }
 
-.header{ /*space behind navbar*/
+/*way to condense this?*/
+
+/*INDEX.HTML*/
+.index-header{ /*space behind navbar*/
     position: fixed; /*makes it not move when you scroll*/
     top: 0;
     left: 0;
@@ -28,31 +29,105 @@ body{ /*full website body*/
 
 .logo{ /*the website logo: Yarmi. */
     font-size: 25px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 600;
 }
 
-.navbar a{ /*elements of the navigation bar*/
+.index-navbar a{ /*elements of the navigation bar*/
     font-size: 18px;
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 400;
     margin-left: 35px;
 }
 
-.navbar a:hover, /*for when you hover over this element*/
-.navbar a.active{
-    color:rgb(127, 255, 251);
+.index-navbar a:hover, /*for when you hover over this element*/
+.index-navbar a.active{
+    color:rgb(216, 58, 172);
 }
 
-.home{
-    display: flex;
+.index-home{
+    display: flex;               
+    align-items: center;         
+    justify-content: space-between; 
+    height: 100vh;               
+    padding: 0 10%; 
+}
+
+.index-home-content{
+    max-width: 600px; 
+    z-index: 1;
+    flex: 1; 
+}
+
+.index-home-image{
+    max-width: 40%;
+    height: auto;
+    flex-shrink: 0;
+    transform: translateX(-310px);
+}
+
+/*RESUME.HTML*/
+.resume-navbar a{ /*elements of the navigation bar*/
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+}
+.resume-header{ /*space behind navbar*/
+    position: fixed; /*makes it not move when you scroll*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display:flex;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    padding: 0 10%; /*this deals with the margins on the page*/
+    z-index: 100;
+}
+.resume-navbar a:hover, /*for when you hover over this element*/
+.resume-navbar a.active{
+    color:rgb(216, 58, 172);
+}
+.resume-home{
+    display: flex;               
+    align-items: center;         
+    justify-content: space-between; 
+    height: 100vh;               
+    padding: 0 10%;
 }
 
-.home-content{
-    max-width: 600px;
+/*PROJECTS*/
+.projects-navbar a{ /*elements of the navigation bar*/
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+}
+.projects-header{ /*space behind navbar*/
+    position: fixed; /*makes it not move when you scroll*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.projects-navbar a:hover, /*for when you hover over this element*/
+.projects-navbar a.active{
+    color:rgb(216, 58, 172);
+}
+.projects-home{
+    display: flex;               
+    align-items: center;         
+    justify-content: space-between; 
+    height: 100vh;               
+    padding: 0 10%;
 }
