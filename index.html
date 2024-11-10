@@ -1,60 +1,41 @@
-
-<!--THIS CHANGE SHOULD SHOW UP ON THE WEBSITE!-->
-
-
-
 <!--
     for debugging:
     cd ~/Desktop/projects/Portfolio
     open -a "Google Chrome" index.html
     
 -->
-
-<!-- would like some cool motion/ pop ups when scrolling on each page-->
- <!--find out how to make this website live-->
-
-
-
-
 <!DOCTYPE html>
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv = "X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-        <title> FirstName </title>
+        <title>Yarmi</title>
         <link rel="stylesheet" href="style.css">
     </head>
-
-
     <body>
+        <header class="index-header">
 
-
-        <header class="header">
-
-            <a href="#" class="logo">Me. </a>
-
-            <nav class="navbar">
-                <a href="#" class="active" >Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="mailto:myemail@gmail.com?subject=%F0%9F%A7%A0I%20Would%20Like%20To%20Hire%20You!">Contact</a>
+            <a href="#" class="logo" id="logoLink">Yarmi.</a>
+            <!--Placeholder for now-->
+            <nav class="index-navbar">
+                <a href="#" class="active" id="aboutLink">About</a>
+                <a href="#" id="resumeLink" >Resume</a>
+                <a href="#" id="projectsLink" >Projects</a>
+                <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0I%20would%20like%20to%20hire%20you!">Contact</a>
+                <!--may find a different place for this-->
                 <!--Unicode for brain emoji: %F0%9F%A7%A0-->
             </nav>
-
-
         </header>
-
-        <section class="home">
-            <div class="home-content">
-                <h1>
-                    Greetings! I'm FirstName LastName
+        <section class="index-home">
+            <div class="index-home-content">
+                <h1> <!--Make this larger?-->
+                    Welcome to My Website!
                 </h1>
-
                 <h3>
+                    <!--my name?-->
                     CS Student | Full-Stack Developer
                 </h3>
-
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -65,50 +46,16 @@
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                     mollit anim id est laborum.
                 </p>
-                <div class="btn-box">
+                <div class="index-btn-box"> <!--Remove this soon?-->
                     <a href="#">Hire me</a>
                     <a href="#">Let's Talk</a>
                 </div>
-
-
             </div>
+            <section class = "index-home-image">
+                <img src="cat.jpg" alt="cat with headphones">
+            </section>
         </section>
-
-
-
-
-
-
-
-
+        
         <script src="script.js"></script>
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html> 
