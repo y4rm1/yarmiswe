@@ -1,36 +1,27 @@
-<!--
-    for debugging:
-    cd ~/Desktop/projects/Portfolio
-    open -a "Google Chrome" index.html
-    
--->
 <!DOCTYPE html>
 <html lang = "en">
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv = "X-UA-Compatible" content="IE=edge">
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yarmi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Yarmi's Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
+
     <body>
         <header class="header">
-            <a href="#" class="logo" id="logoLink">Yarmi.</a>
+            <a href="#" class="logo" id="logoLink">yarmi</a>
 
             <nav class="navbar">
                 <a href="#" class="active" id="aboutLink">About</a>
                 <a href="#" id="resumeLink" >Resume</a>
                 <a href="#" id="projectsLink" >Projects</a>
-                <!--We use href="#" for test links. In a real web site this would be URLs.
-                How do i get the real urls?-->
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle">Contact</a>
                     <div class="dropdown-content">
-                        <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0%20I%20would%20like%20to%20hire%20you!">Email</a>
-                            <!--may find a different place for this-->
-                            <!--Unicode for brain emoji: %F0%9F%A7%A0-->
+                        <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0%20Let's%20Connect!" >Email</a>
                         <a href="https://www.linkedin.com/in/yarmikalokoh" target="_blank">LinkedIn</a>
                         <a href="https://github.com/y4rm1" target="_blank">GitHub</a>
                     </div>
@@ -40,37 +31,45 @@
         </header>
 
         <section class="index-home">
-            <div class="index-home-content">
-                <h1> <!--Make this larger?-->
-                    Welcome to My Website!
-                </h1>
-                <h3>
-                    <!--my name?-->
-                    CS Student | Full-Stack Developer
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                    mollit anim id est laborum.
-                </p>
-                <div class="index-btn-box"> <!--Remove this soon?-->
-                    <a href="#">Hire me</a>
-                    <a href="#">Let's Talk</a>
+            <div class="home-content-container">
+                <div class="index-home-window">
+                    <div class="index-home-titlebar">
+                        <div class="index-home-title"> (1) MESSAGE </div>
+                        <div class="index-home-controls">
+                            <div class="control minimize"></div>
+                            <div class="control maximize">
+                                <div class="maximize-inner"></div>
+                            </div>
+                            <div class="control close"></div>
+                        </div>
+                    </div>
+                    <div class="index-home-content">
+                        <h1 class="typing"> 
+                            Welcome to My Website!
+                        </h1>
+                        <h3>
+                            CS Student, Full-Stack Development
+                        </h3>
+                        <p>
+                            I’m currently a Computer Science major and Philosophy minor at the University of Maryland, College Park! 
+                            I’m currently seeking software engineering internships, and roles where I can showcase my technical 
+                            skills and continue to grow as a developer. My career interests include full-stack development, as well as 
+                            Machine Learning and AI. 
+                        </p>
+                        <div class="index-btn-box">
+                            <a href="/Users/yarmik/Desktop/projects/Portfolio/resume.pdf" target="_blank" >Click here for Resume PDF</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <section class = "index-home-image">
-                <img src="cat.jpg" alt="cat with headphones">
+            <section class="index-home-image">
+                <img src="images/puppy.png" alt="puppy with headphones">
             </section>
         </section>
 
         <footer>
             <p>
-                open source code is available on my <a href="https://github.com/y4rm1">github</a>
+                open source code for this site is available on my <a href="https://github.com/y4rm1" target="_blank">github</a>
             </p>
         </footer>
         

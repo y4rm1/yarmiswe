@@ -4,13 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yarmi</title>
+        <title>Projects</title>
         <link rel="stylesheet" href="style.css"> 
     </head>
 
     <body>
         <header class="header">
-            <a href="#" class="logo" id="logoLink">Yarmi.</a>
+            <a href="#" class="logo" id="logoLink">yarmi</a>
                 <nav class="navbar">
                     <a href="#" id="aboutLink" >About</a>
                     <a href="#" id="resumeLink" >Resume</a>
@@ -18,16 +18,13 @@
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle">Contact</a>
                         <div class="dropdown-content">
-                            <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0%20I%20would%20like%20to%20hire%20you!">Email</a>
-                                <!--may find a different place for this-->
-                                <!--Unicode for brain emoji: %F0%9F%A7%A0-->
+                            <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0%20Let's%20Connect!">Email</a>
                             <a href="https://www.linkedin.com/in/yarmikalokoh" target="_blank">LinkedIn</a>
                             <a href="https://github.com/y4rm1" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </nav>
         </header>
-        
 
         <section class="title-page">
             <h1 class="page-title">
@@ -37,59 +34,138 @@
 
         <!-- Projects Section -->
         <section class="projects-home">
-            
-            <div class="project-container">
+ 
+            <div class="project-container project-container-1">
                 <div class="project-left">
-                    <h5>Project 1</h5>
+                    <h5>Chatbot</h5>
                     <div class="project-image">
-                        <img src="dog-crunching-numbers.jpeg" alt="Project 1 Image">
+                        <img src="images/robot.jpg" alt="Project 1 Image">
+                        <a href="https://github.com/y4rm1" target="_blank" class="hover-text">Click here for Chatbot Github Repository</a>
                     </div>
                 </div>
 
                 <div class="project-right">
                     <div class="project-box">
-                        <h6>Project 1 Description</h6>
-                        <p>Details about the project...</p>
+                        <h6>Description</h6>
+                        <p>This project is a basic Python-based rule-based 
+                            chatbot that interacts with users by responding 
+                            to specific keyword inputs. The chatbot uses a 
+                            set of predefined responses based on user input, 
+                            allowing for dynamic and engaging conversations. 
+                            This is an ongoing project.</p>
+                        <h3>Key Features</h3>
+                            <ul>
+                                <li>Natural Language Processing (NLP) Framework Integration</li>
+                                <li>User Input Handling</li>
+                                <li>Regex</li>
+                                <li>Scalability</li>
+                            </ul>
+                        <h3>Further Steps</h3>
+                        <p>I am currently working
+                            on incorporating RegEx expressions to help with 
+                            recognizing different forms of the same word, 
+                            different phrasings of the same statement, and 
+                            possible misspellings, in order to make the 
+                            chatbot less rigid in responses.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="project-container">
+            <div class="project-container project-container-2">
                 <div class="project-left">
-                    <h5>Project 2</h5>
+                    <h5>Weather Application</h5>
                     <div class="project-image">
-                        <img src="dog-crunching-numbers.jpeg" alt="Project 2 Image">
+                        <img src="images/weather.jpg" alt="Project 2 Image">
+                        <a href="https://github.com/y4rm1" target="_blank" class="hover-text">Click here for WeatherApp Github Repository</a>
                     </div>
                 </div>
 
                 <div class="project-right">
                     <div class="project-box">
-                        <h6>Project 2 Description</h6>
-                        <p>Details about the project...</p>
+                        <h6>Description</h6>
+                        <p>This Java-based project retrieves current weather data
+                             for a user-specified location using the WeatherStack 
+                             API. Upon running the program, the user is prompted 
+                             to enter the name of a city, and the program constructs
+                              a dynamic URL to query the weather API. The application 
+                              sends an HTTP GET request to the API, which returns a 
+                              JSON response containing weather information. The 
+                              program then reads and displays this response. 
+                              Error handling is built into the application to
+                              check for missing API keys and unsuccessful API requests. 
+                              The use of an environment variable for the API key enhances 
+                              security by keeping the key out of the source code. 
+                              This is an ongoing project.</p>
+                        <h6>Key Features</h6>
+                        <h3>Key Features</h3>
+                            <ul>
+                                <li>Weather API Integration</li>
+                                <li>User Input Handling</li>
+                                <li>Error Handling</li>
+                                <li>Scalability</li>
+                                <li>Response Parsing</li>
+                                <li>Web Interface</li>
+                            </ul>
+                        <h6>Further Steps</h6>
+                        <p>I am currently working on fully integrating the JSON parser to efficiently extract 
+                            and display relevant weather details. Currently, the program simply prints the raw JSON response 
+                            to the console, but the next step would be to parse the JSON data 
+                            and display specific weather information. Additionally, I am working towards 
+                            transforming this project from a command-line interface (CLI) to a 
+                            web interface, which will feature input fields for location queries, 
+                            a display area for the weather data, and other user-friendly elements.  </p>
                     </div>
                 </div>
             </div>
 
-            <div class="project-container">
+            <div class="project-container project-container-3">
                 <div class="project-left">
-                    <h5>Project 3</h5>
+                    <h5>Calculator</h5>
                     <div class="project-image">
-                        <img src="dog-crunching-numbers.jpeg" alt="Project 3 Image">
+                        <img src="images/calc.jpg" alt="Project 3 Image">
+                        <a href="https://github.com/y4rm1" target="_blank" class="hover-text">Click here for Calculator Github Repository</a>
                     </div>
                 </div>
 
                 <div class="project-right">
                     <div class="project-box">
-                        <h6>Project 3 Description</h6>
-                        <p>Details about the project...</p>
+                        <h6>Description</h6>
+                        <p>This Java-based calculator program is designed to perform 
+                            basic arithmetic operations such as addition, subtraction,
+                             multiplication, and division. The program processes the user input by 
+                                splitting it into tokens, distinguishing between numbers and operators. 
+                                It then uses a series of modular functions to execute the appropriate 
+                                arithmetic operation. The program supports both integers and floating-point
+                                 numbers and performs operations sequentially based on the input. 
+                                 Error handling is included to catch invalid number formats, division 
+                                 by zero, and other potential issues, with custom error messages displayed 
+                                 for each case. This is an ongoing project.</p>
+                        <h6>Key Features</h6>
+                            <ul>
+                                <li>Basic Calculator Operation</li>
+                                <li>Supports Multiple Operations in Sequence</li>
+                                <li>Number Type Flexibility</li>
+                                <li>User Input Handling</li>
+                                <li>Error Handling</li>
+                                <li>GUI Interface</li>
+                            </ul>
+                        <h6>Further Steps</h6>
+                        <p> I am currently working on integrating more complex mathematical operations, 
+                            such as exponentiation, square roots, and trigonometric functions (e.g., sine, 
+                            cosine, and tangent), and improve the input parsing logic to support parentheses 
+                            and handle the order of operations (PEMDAS). Additionally, I am working on 
+                            transitioning this project from a command-line interface (CLI) to a graphical 
+                            user interface (GUI), which will involve implementing a display area to show the 
+                            user’s input and results, as well as enhancing error handling within the interface. </p>
                     </div>
                 </div>
             </div>
+
         </section>   
 
         <footer>
             <p>
-                open source code is available on my <a href="https://github.com/y4rm1">github</a>
+                open source code for this site is available on my <a href="https://github.com/y4rm1" target="_blank" >github</a>
             </p>
         </footer>
 
