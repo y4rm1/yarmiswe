@@ -1,30 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yarmi</title>
         <link rel="stylesheet" href="style.css"> 
     </head>
+
     <body>
-        <header class="projects-header">
+        <header class="header">
             <a href="#" class="logo" id="logoLink">Yarmi.</a>
-                <!--Placeholder for now-->
-                <nav class="projects-navbar">
+                <nav class="navbar">
                     <a href="#" id="aboutLink" >About</a>
                     <a href="#" id="resumeLink" >Resume</a>
                     <a href="#" class="active" id="projectsLink">Projects</a>
-                    <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0I%20would%20like%20to%20hire%20you!">Contact</a>
-                    <!--may find a different place for this-->
-                    <!--Unicode for brain emoji: %F0%9F%A7%A0-->
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle">Contact</a>
+                        <div class="dropdown-content">
+                            <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0%20I%20would%20like%20to%20hire%20you!">Email</a>
+                                <!--may find a different place for this-->
+                                <!--Unicode for brain emoji: %F0%9F%A7%A0-->
+                            <a href="https://www.linkedin.com/in/yarmikalokoh" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/y4rm1" target="_blank">GitHub</a>
+                        </div>
+                    </div>
                 </nav>
         </header>
-        <section class ="projects-home">
-            <h5>
-                PLACEHOLDER
-            </h5>
-        </section>  
-        <!-- more sections needed -->
+        
+
+        <section class="title-page">
+            <h1 class="page-title">
+                Projects
+            </h1>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-home">
+            
+            <div class="project-container">
+                <div class="project-left">
+                    <h5>Project 1</h5>
+                    <div class="project-image">
+                        <img src="dog-crunching-numbers.jpeg" alt="Project 1 Image">
+                    </div>
+                </div>
+
+                <div class="project-right">
+                    <div class="project-box">
+                        <h6>Project 1 Description</h6>
+                        <p>Details about the project...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-left">
+                    <h5>Project 2</h5>
+                    <div class="project-image">
+                        <img src="dog-crunching-numbers.jpeg" alt="Project 2 Image">
+                    </div>
+                </div>
+
+                <div class="project-right">
+                    <div class="project-box">
+                        <h6>Project 2 Description</h6>
+                        <p>Details about the project...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-left">
+                    <h5>Project 3</h5>
+                    <div class="project-image">
+                        <img src="dog-crunching-numbers.jpeg" alt="Project 3 Image">
+                    </div>
+                </div>
+
+                <div class="project-right">
+                    <div class="project-box">
+                        <h6>Project 3 Description</h6>
+                        <p>Details about the project...</p>
+                    </div>
+                </div>
+            </div>
+        </section>   
+
+        <footer>
+            <p>
+                open source code is available on my <a href="https://github.com/y4rm1">github</a>
+            </p>
+        </footer>
+
         <script src="script.js"></script> 
     </body>
+    
 </html>

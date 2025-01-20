@@ -6,6 +6,7 @@
 -->
 <!DOCTYPE html>
 <html lang = "en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv = "X-UA-Compatible" content="IE=edge">
@@ -13,20 +14,31 @@
         <title>Yarmi</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <header class="index-header">
 
+    <body>
+        <header class="header">
             <a href="#" class="logo" id="logoLink">Yarmi.</a>
-            <!--Placeholder for now-->
-            <nav class="index-navbar">
+
+            <nav class="navbar">
                 <a href="#" class="active" id="aboutLink">About</a>
                 <a href="#" id="resumeLink" >Resume</a>
                 <a href="#" id="projectsLink" >Projects</a>
-                <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0I%20would%20like%20to%20hire%20you!">Contact</a>
-                <!--may find a different place for this-->
-                <!--Unicode for brain emoji: %F0%9F%A7%A0-->
+                <!--We use href="#" for test links. In a real web site this would be URLs.
+                How do i get the real urls?-->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="mailto:yarmiswe@gmail.com?subject=%F0%9F%A7%A0%20I%20would%20like%20to%20hire%20you!">Email</a>
+                            <!--may find a different place for this-->
+                            <!--Unicode for brain emoji: %F0%9F%A7%A0-->
+                        <a href="https://www.linkedin.com/in/yarmikalokoh" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/y4rm1" target="_blank">GitHub</a>
+                    </div>
+                </div>
             </nav>
+
         </header>
+
         <section class="index-home">
             <div class="index-home-content">
                 <h1> <!--Make this larger?-->
@@ -55,6 +67,12 @@
                 <img src="cat.jpg" alt="cat with headphones">
             </section>
         </section>
+
+        <footer>
+            <p>
+                open source code is available on my <a href="https://github.com/y4rm1">github</a>
+            </p>
+        </footer>
         
         <script src="script.js"></script>
     </body>

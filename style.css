@@ -11,42 +11,99 @@ body{ /*full website body*/
     background-color:rgb(255, 255, 255);
 }
 
-/*way to condense this?*/
-
-/*INDEX.HTML*/
-.index-header{ /*space behind navbar*/
+.header{ /*space behind navbar*/
     position: fixed; /*makes it not move when you scroll*/
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background:transparent;
+    background:white;
     display:flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
-
+.navbar a{ /*elements of the navigation bar*/
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar a:hover, /*for when you hover over this element*/
+.navbar a.active{
+    color:rgb(216, 58, 172);
+    transform: scale(1.1);
+}
 .logo{ /*the website logo: Yarmi. */
     font-size: 25px;
     color: black;
     text-decoration: none;
     font-weight: 600;
 }
-
-.index-navbar a{ /*elements of the navigation bar*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-toggle {
     font-size: 18px;
     color: black;
     text-decoration: none;
-    font-weight: 400;
-    margin-left: 35px;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-align: center; 
 }
-
-.index-navbar a:hover, /*for when you hover over this element*/
-.index-navbar a.active{
+.dropdown-content { /* dropdown content (hidden by default) */
+    display: none; 
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: white;
+    z-index: 1; 
+    transform: translateX(15px); 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a { /* dropdown item styling */
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    transform: translateX(-30px);
+    display: block;  
+    border-radius: 6px;
+}
+.dropdown-content a:hover { /* change color of dropdown items on hover */
+    background-color: #f0f0f0;
+    color: rgb(216, 58, 172);  /*for text*/
+}
+.dropdown-content a {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+footer{
+    background-color: pink;
+    padding: 5px;   
+    text-decoration: none;
+    text-align: center;
+}
+footer a {
     color:rgb(216, 58, 172);
+    text-decoration: none; 
 }
 
+
+/***** PAGE SPECIFIC ELEMENTS ****/
+
+
+/*INDEX.HTML*/
 .index-home{
     display: flex;               
     align-items: center;         
@@ -54,44 +111,20 @@ body{ /*full website body*/
     height: 100vh;               
     padding: 0 10%; 
 }
-
 .index-home-content{
     max-width: 600px; 
     z-index: 1;
     flex: 1; 
 }
-
 .index-home-image{
     max-width: 40%;
     height: auto;
     flex-shrink: 0;
-    transform: translateX(-310px);
+    transform: translateX(-310px); /*this is whats causing the strange scroll issue on the homepage*/
 }
 
+
 /*RESUME.HTML*/
-.resume-navbar a{ /*elements of the navigation bar*/
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    font-weight: 400;
-    margin-left: 35px;
-}
-.resume-header{ /*space behind navbar*/
-    position: fixed; /*makes it not move when you scroll*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background:transparent;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-.resume-navbar a:hover, /*for when you hover over this element*/
-.resume-navbar a.active{
-    color:rgb(216, 58, 172);
-}
 .resume-home{
     display: flex;               
     align-items: center;         
@@ -99,35 +132,145 @@ body{ /*full website body*/
     height: 100vh;               
     padding: 0 10%;
 }
-
-/*PROJECTS*/
-.projects-navbar a{ /*elements of the navigation bar*/
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    font-weight: 400;
-    margin-left: 35px;
+.scroll-sidebar {
+    position: fixed;
+    left: 47%; /* position at the center horizontally */
+    transform: translateX(-50%); 
+    background-color: rgba(212, 184, 208, 0.3); 
+    padding: 12px 25px; 
+    border-radius: 50px; /* for oval effect */
+    width: auto; /*width to auto-adjust based on content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 90;
+    height: auto;
+    overflow: hidden;
+    display: flex; /*arrange items horizontally */
+    justify-content: center; /* center the items within the sidebar */
 }
-.projects-header{ /*space behind navbar*/
-    position: fixed; /*makes it not move when you scroll*/
+.scroll-sidebar ul {
+    display: flex; /* arrange items horizontally */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.scroll-sidebar li {
+    margin: 0 15px; /* space out the list items */
+}
+.scroll-sidebar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: block; 
+    padding: 4px 10px; 
+}
+.scroll-sidebar a:hover { 
+    color: rgb(216, 58, 172);
+}
+.resume-section { 
+    padding: 80px 10%; /* padding for fixed navbar */
+    margin-top: 100px; /* sections pushed below the fixed header */
+    background-color: white;
+    min-height: 100vh; /* each section takes full page height */
+}
+h2 {
+    font-size: 28px;
+}
+
+.resume-section {
+    padding-top: 90px; 
+}
+
+
+/*PROJECTS.HTML*/
+.title-page{
+    margin-top: 90px;
+    font-size: 28px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+}
+.projects-home {
+    display: flex;
+    flex-direction: column; /* stack projects vertically */
+    justify-content: flex-start; 
+    padding: 50px 10%; /*padding around the entire section */
+    margin-top: 100px;
+    margin-bottom: 300px;
+    gap: 400px; /* space between project containers */
+}
+
+/* container for each project - flexbox */
+.project-container {
+    display: flex; /* arrange project name, image, and box horizontally */
+    justify-content: space-between; /* space between left (image) and right (box) sections */
+    align-items: flex-start; /* align items at the top */
+    gap: 80px; /* space between the left and right sections */
+    width: 100%; 
+}
+/* (project name and image) */
+.project-left {
+    display: flex;
+    flex-direction: column; /* Stack project name and image vertically */
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    width: 500px; /* Fixed width for project name and image */
+    margin-bottom: 20px; /* Add margin to separate from the project box */
+}
+.project-left h5 {
+    margin-bottom: 20px; /* Add space below the title */
+    font-size: 30px; /* Adjust title size */
+    text-align: center; /* Center the title */
+}
+.project-image img {
+    width: 200%; 
+    max-width: 400px; 
+    max-height: 400px;
+    height: auto;
+}
+/*(project box)*/
+.project-right {
+    flex-grow: 1; 
+}
+.project-box {
+    background-color: #fff;
+    border: 2px solid transparent; /* invisible border for the outline animation */
+    padding: 30px; /* padding inside the project box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease; /* Smooth transition */
+    position: relative; /* for the outline animation */
+    height: auto; /* let the project box expand based on content */
+    margin-top: 80px; /*space between the box and the image + title */
+}
+.project-box h6 {
+    font-size: 20px;
+    margin-bottom: 15px; /* space between heading and content */
+}
+.project-box p {
+    font-size: 16px;
+}
+/* hover effect on project boxes */
+.project-box:hover {
+    transform: translateY(-10px); /* lift the box */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* darker, larger shadow */
+}
+/* outline animation on hover */
+.project-box::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background:transparent;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    right: 0;
+    bottom: 0;
+    border: 2px solid black; /* black border for the outline */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* smooth transition for the opacity */
 }
-.projects-navbar a:hover, /*for when you hover over this element*/
-.projects-navbar a.active{
-    color:rgb(216, 58, 172);
+.project-box:hover::before {
+    opacity: 1; /* show the outline on hover */
 }
-.projects-home{
-    display: flex;               
-    align-items: center;         
-    justify-content: space-between; 
-    height: 100vh;               
-    padding: 0 10%;
+
+/* smooth scrolling behavior */
+html {
+    scroll-behavior: smooth; 
 }
