@@ -210,7 +210,7 @@ document.addEventListener('click', function(event) {
     clickEffect.classList.add('click-effect');
     
     // Set the source of the image (replace with the path to your PNG image)
-    clickEffect.src = 'images/puppy.png'; // Replace with your image path
+    clickEffect.src = 'images/clicker.png'; // Replace with your image path
     
     // Set the size of the effect (adjust these to the image's natural size or your desired size)
     clickEffect.style.width = '50px'; // Adjust to your image size
