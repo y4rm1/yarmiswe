@@ -210,7 +210,7 @@ document.addEventListener('click', function(event) {
     clickEffect.classList.add('click-effect');
     
     // Set the source of the image (replace with the path to your PNG image)
-    clickEffect.src = 'images/clicker.png'; // Replace with your image path
+    clickEffect.src = 'images/puppy.png'; // Replace with your image path
     
     // Set the size of the effect (adjust these to the image's natural size or your desired size)
     clickEffect.style.width = '50px'; // Adjust to your image size
@@ -228,9 +228,3 @@ document.addEventListener('click', function(event) {
       clickEffect.remove();
     }, 500); // Match this duration with the animation duration
   });
-  
-  /*
-  window.onload = function() {
-    window.scrollTo(0, 0); // Scroll to the top of the page
-};
-*/
